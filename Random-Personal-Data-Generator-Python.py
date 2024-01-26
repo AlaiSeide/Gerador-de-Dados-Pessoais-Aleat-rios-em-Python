@@ -5,6 +5,9 @@ def gerar_nome():
     nomes = ['Alice', 'Bob', 'Carol', 'David', 'Eve']
     return random.choice(nomes)
 
+
+
+
 # Função para gerar um e-mail aleatório
 def gerar_email():
     dominios = ['gmail.com', 'yahoo.com', 'hotmail.com']
@@ -12,10 +15,14 @@ def gerar_email():
     dominio = random.choice(dominios)
     return f'{nome}@{dominio}'
 
+
 # Função para gerar um número de telefone aleatório
 def gerar_telefone():
     numero = ''.join(random.choice('0123456789') for _ in range(9))
+    print(numero)
     return f'({numero[:2]}) {numero[2:5]}-{numero[5:]}'
+
+print(gerar_telefone())
 
 # Função para gerar o nome de uma cidade aleatória
 def gerar_cidade():
